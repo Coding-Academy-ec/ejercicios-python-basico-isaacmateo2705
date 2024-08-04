@@ -63,37 +63,42 @@ if __name__ == "__main__":
     area=area_circulo(radio)
     print(f"El área del círculo con radio {radio} es: {area}")
 
-# # 6 Define una función que reciba dos números como argumentos y devuelva su suma.
-# def suma(a, b):
-#     # Se devuelve la suma de los dos números recibidos como argumentos
+# 6 Define una función que reciba dos números como argumentos y devuelva su suma.
+def suma(a, b):
+    # Se devuelve la suma de los dos números recibidos como argumentos
+    return a+b
 
-# if __name__ == "__main__":
-#     num1 = int(input("Ingrese el primer número: "))  # Se solicita al usuario que ingrese el primer número
-#     # Se solicita al usuario que ingrese el segundo número
-#     print("La suma es:", suma(num1, num2))  # Se imprime la suma de los dos números ingresados
+if __name__ == "__main__":
+    num1 = int(input("Ingrese el primer número: "))  # Se solicita al usuario que ingrese el primer número
+    # Se solicita al usuario que ingrese el segundo número
+    num2 =int(input("Ingrese el segundo numero"))
+    print("La suma es:", suma(num1, num2))  # Se imprime la suma de los dos números ingresados
 
-# # 7 Modifica la función que calcula el área del círculo para que reciba el radio como parámetro.
-# import math
+# 7 Modifica la función que calcula el área del círculo para que reciba el radio como parámetro.
+import math
 
-# def area_circulo(radio):
-#     area = math.pi * radio ** 2  # Se calcula el área del círculo utilizando la fórmula matemática
-#     # Se devuelve el área calculada
+def area_circulo(radio):
+    area = math.pi * radio ** 2  # Se calcula el área del círculo utilizando la fórmula matemática
+    # Se devuelve el área calculada
+    return area
 
-# if __name__ == "__main__":
-#     radio = float(input("Ingrese el radio del círculo: "))  # Se solicita al usuario que ingrese el radio del círculo
-#     print("El área del círculo es:", area_circulo(radio))  # Se imprime el área calculada del círculo
+if __name__ == "__main__":
+    radio = float(input("Ingrese el radio del círculo: "))  # Se solicita al usuario que ingrese el radio del círculo
+    print("El área del círculo es:", area_circulo(radio))  # Se imprime el área calculada del círculo
 
-# # 8 Diseña un programa que convierta grados Celsius a Fahrenheit y viceversa, utilizando funciones para realizar los cálculos.
-# def celsius_a_fahrenheit(celsius):
-#     return (celsius * 9/5) + 32  # Se aplica la fórmula de conversión de Celsius a Fahrenheit
+# 8 Diseña un programa que convierta grados Celsius a Fahrenheit y viceversa, utilizando funciones para realizar los cálculos.
+def celsius_a_fahrenheit(celsius):
+    return (celsius * 9/5) + 32  # Se aplica la fórmula de conversión de Celsius a Fahrenheit
 
-# def fahrenheit_a_celsius(fahrenheit):
-#     # Se aplica la fórmula de conversión de Fahrenheit a Celsius
+def fahrenheit_a_celsius(fahrenheit):
+    # Se aplica la fórmula de conversión de Fahrenheit a Celsius
+    return (fahrenheit-32)*5/9
 
-# if __name__ == "__main__":
-#     celsius = float(input("Ingrese la temperatura en grados Celsius: "))  # Se solicita al usuario que ingrese la temperatura en grados Celsius
-#     print("Temperatura en Fahrenheit:", celsius_a_fahrenheit(celsius))  # Se imprime la temperatura convertida a grados Fahrenheit
-#     # Se solicita al usuario que ingrese la temperatura en grados Fahrenheit
-#     print("Temperatura en Celsius:", fahrenheit_a_celsius(fahrenheit))  # Se imprime la temperatura convertida a grados Celsius
+if __name__ == "__main__":
+    celsius = float(input("Ingrese la temperatura en grados Celsius: "))  # Se solicita al usuario que ingrese la temperatura en grados Celsius
+    print("Temperatura en Fahrenheit:", celsius_a_fahrenheit(celsius))  # Se imprime la temperatura convertida a grados Fahrenheit
+    # Se solicita al usuario que ingrese la temperatura en grados Fahrenheit
+    fahrenheit= float(input("Ingrese la temperatura en grado Fahrenheit"))
+    print("Temperatura en Celsius:", fahrenheit_a_celsius(fahrenheit))  # Se imprime la temperatura convertida a grados Celsius
     
     
